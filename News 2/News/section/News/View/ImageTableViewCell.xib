@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="KGk-i7-Jjw" customClass="ImageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="szC-Fs-yox">
+                        <rect key="frame" x="8" y="8" width="332" height="111"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="111" id="duL-82-zXx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogH-9T-Tcd">
+                        <rect key="frame" x="17" y="16" width="315" height="95"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ogH-9T-Tcd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="57Z-pm-GaZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="szC-Fs-yox" secondAttribute="trailing" id="EsV-Lk-p4T"/>
+                    <constraint firstAttribute="topMargin" secondItem="szC-Fs-yox" secondAttribute="top" id="IlZ-G4-Fvk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ogH-9T-Tcd" secondAttribute="trailing" constant="8" id="Ykv-CU-SWr"/>
+                    <constraint firstItem="ogH-9T-Tcd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="kXv-n2-CqA"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ogH-9T-Tcd" secondAttribute="bottom" constant="8" id="wBW-uD-E1b"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="szC-Fs-yox" secondAttribute="leading" id="ygf-Ig-KRZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="szC-Fs-yox" secondAttribute="bottom" id="ztk-So-Eav"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="image" destination="szC-Fs-yox" id="vOa-wF-3wb"/>
+                <outlet property="label" destination="ogH-9T-Tcd" id="Ygo-Xu-pDZ"/>
+            </connections>
+            <point key="canvasLocation" x="607" y="378"/>
+        </tableViewCell>
+    </objects>
+</document>
